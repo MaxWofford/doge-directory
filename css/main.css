@@ -4,10 +4,12 @@
    Author's custom styles
    ========================================================================== */
 
-#map-canvas, #googft-mapCanvas {
+#googft-mapCanvas {
   height: 75vh;
   margin: 0px;
   padding: 0px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 
