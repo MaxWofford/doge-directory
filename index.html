@@ -63,7 +63,7 @@
       zoom: 17,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
-    var query = 'select col0 from 1U-gCsYGI_-b98me1xyzeDzM_KIeL901_8w6iQzs limit 1000';
+    var query = 'select col0 from 1U-gCsYGI_-AIzaSyCEcPE4vWkOXJGmJu_1zX9mzJZjHZHnTSk limit 1000';
     var request = gapi.client.fusiontables.query.sqlGet({ sql: query });
     request.execute(function(response) {
       onDataFetched(response);
