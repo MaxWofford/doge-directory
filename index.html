@@ -19,7 +19,7 @@
         </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
-
+        <script src="http://cdn.bitmindo.com/dogecoin.min.js"></script>
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
         <!--Google maps access for all!-->
@@ -103,6 +103,20 @@
       <div class="container">
         <h1>Doge-directory</h1>
         <p>An opt-in database to track Shibe populations over the world. Comes in handy for planning your next dogecoin party! Dogecoin address is optional, and if you don't want to put your specific address you can put a generic area (ie. city or zip code).</p>
+        <script>
+          CoinWidgetCom.go({
+            /* make sure you update the wallet_address or you will not get your donations */
+            wallet_address: "DDonateRLUaYVdVHw2t4UZEEWmWmayoePE"
+            , currency: "dogecoin"
+            , counter: "amount"
+            , alignment: "bl"
+            , qrcode: true
+            , auto_show: false
+            , lbl_button: "Donate"
+            , lbl_address: "Tip Dogecoin to this Address:"
+            , lbl_amount: "DOGE"
+          });
+        </script>
       </div>
     </div>
 <div id="googft-mapCanvas" style="margin-right:auto; margin-left:auto;"></div>
