@@ -95,13 +95,6 @@
           </button>
           <a class="navbar-brand" href="#">Doge-directory</a>
         </div>
-        <!-- <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>/.navbar-collapse -->
       </div>
     </div>
 
@@ -112,23 +105,31 @@
         <p>An opt-in database to track Shibe populations over the world. Comes in handy for planning your next dogecoin party! Dogecoin address is optional, and if you don't want to put your specific address you can put a generic area (ie. city or zip code).</p>
       </div>
     </div>
-<div id="googft-mapCanvas"></div>
-    <div class="container">
+<div id="googft-mapCanvas" style="margin-right:auto; margin-left:auto;"></div>
+    <div class="container" align="center">
       <!-- Example row of columns -->
+      <form id ="info">
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-6">
           <h2>Geographical Address</h2>
-          <p>Put your geographical location here:</p> <input type="text" id="geo" value="123 Small street, Bit town 90123">
-       </div>
-        <div class="col-lg-4">
+          <p>Put your geographical location here:</p> 
+          <input type="text" id="location" placeholder="123 Small street, Bit town 90123">
+        </div>
+        <div class="col-lg-6">
           <h2>Dogecoin Address</h2>
           <p>Put your Dogecoin address (optional) here:</p>
-          <input type="text" id="doge" value="DDceJBai3D9WJDbhxY6MSDsAW2ymnV6Mpk">
+          <input type="text" id="publicAddress" placeholder="DDceJBai3D9WJDbhxY6MSDsAW2ymnV6Mpk">
         </div>
+        <br>
       </div>
-
+      <br>
+        <input type="submit" align="center">
+      </form>
+        <script  src="https://s3.amazonaws.com/fireform/fireform.min.js"></script>
+      <script>
+        new Fireform('#info', 'http://fireform.org/list/186/shibe-survey');
+      </script>
       <hr>
-
       <footer>
         <p>Copyright DogeLabs 2014</p>
       </footer>

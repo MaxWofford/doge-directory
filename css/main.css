@@ -1,14 +1,15 @@
-
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-#googft-mapCanvas {
-  height: 75vh;
-  margin: 0px;
-  padding: 0px;
-  margin-right: auto;
-  margin-left: auto;
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
 
+#summary {
+	text-align: center;
+	border-color: grey;
+	border-width: 2px;
+	width: 60%
+}
+
+#summary-holder {
+	float: center;
+}
